@@ -6,5 +6,6 @@ def alphabetize(arr)
     binding.pry
     indicies = []
     phrase.each_char{|index| indicies << esperanto_alphabet.index(phrase[index])}
+    indicies
   end
 end
