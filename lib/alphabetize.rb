@@ -4,6 +4,7 @@ def alphabetize(arr)
 
   sorted = arr.sort_by do |phrase|
     binding.pry
-    phrase.map{|index| esperanto_alphabet.index(phrase[index])}
+    indicies = []
+    phrase.each_char{|index| indicies << esperanto_alphabet.index(phrase[index])}
   end
 end
