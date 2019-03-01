@@ -5,5 +5,4 @@ def alphabetize(arr)
   sorted = arr.sort_by do |phrase|
   esperanto_alphabet.index(phrase[0])
 end
-binding.pry
 end
