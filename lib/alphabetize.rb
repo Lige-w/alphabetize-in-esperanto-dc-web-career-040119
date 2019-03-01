@@ -3,6 +3,7 @@ def alphabetize(arr)
   esperanto_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
   sorted = arr.sort_by do |phrase|
-  esperanto_alphabet.index(phrase[0])
-end
+    binding.pry
+    phrase.map{|index| esperanto_alphabet.index(phrase[index])
+  end
 end
